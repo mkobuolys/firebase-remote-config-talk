@@ -1,16 +1,28 @@
-# firebase_remote_config_talk
+# Control your Flutter application on the fly with Firebase Remote Config
 
-A new Flutter project.
+![Header image](images/header.png)
 
-## Getting Started
+A presentation from [Fluttercon 2023](https://fluttercon.dev/).
 
-This project is a starting point for a Flutter application.
+Powered by [flutter_deck](https://pub.dev/packages/flutter_deck) 🚀
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Building
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+You can follow these instructions to build the app and install it onto your device.
+
+### Prerequisites
+
+If you are new to Flutter, please first follow the [Flutter Setup](https://flutter.dev/setup/) guide.
+
+### Building and installing the Flutter Design Patterns app
+
+```
+git clone git@github.com:mkobuolys/firebase-remote-config-talk.git
+cd firebase-remote-config-talk
+flutter pub get
+flutter run
+```
+
+The `flutter run` command both builds and runs the Flutter app on your device, browser or emulator.
