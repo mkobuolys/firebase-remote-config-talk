@@ -2,9 +2,11 @@
 
 ![Header image](images/header.png)
 
-A presentation from [Fluttercon 2023](https://fluttercon.dev/).
+A presentation from [Fluttercon 2023](https://fluttercon.dev/) 💙
 
 Powered by [flutter_deck](https://pub.dev/packages/flutter_deck) 🚀
+
+Deployed on [kazlauskas.dev](https://kazlauskas.dev/firebase-remote-config-talk) 🎉
 
 ---
 
