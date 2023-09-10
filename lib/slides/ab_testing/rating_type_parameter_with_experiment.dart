@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class RatingTypeParameterWithExperimentSlide extends FlutterDeckImageSlide {
-  const RatingTypeParameterWithExperimentSlide({super.key})
+class RatingTypeParameterWithExperimentSlide extends FlutterDeckSlideWidget {
+  const RatingTypeParameterWithExperimentSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/rating-type-parameter-with-experiment',
@@ -10,8 +10,12 @@ class RatingTypeParameterWithExperimentSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/ab-testing/rating-type-parameter-with-experiment.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

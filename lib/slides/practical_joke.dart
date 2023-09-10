@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class PracticalJokeSlide extends FlutterDeckImageSlide {
-  const PracticalJokeSlide({super.key})
+class PracticalJokeSlide extends FlutterDeckSlideWidget {
+  const PracticalJokeSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/practical-joke',
@@ -10,8 +10,12 @@ class PracticalJokeSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/practical-joke.jpg',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

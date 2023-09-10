@@ -5,8 +5,8 @@ import 'package:firebase_remote_config_talk/punterest/rating/data/enums/rating_t
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class FeatureFlaggingDemoSlide extends FlutterDeckBlankSlide {
-  const FeatureFlaggingDemoSlide({super.key})
+class FeatureFlaggingDemoSlide extends FlutterDeckSlideWidget {
+  const FeatureFlaggingDemoSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/feature-flagging-demo',
@@ -14,7 +14,11 @@ class FeatureFlaggingDemoSlide extends FlutterDeckBlankSlide {
         );
 
   @override
-  Widget body(BuildContext context) => const _Content();
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.blank(
+      builder: (context) => const _Content(),
+    );
+  }
 }
 
 class _Content extends StatefulWidget {
@@ -60,7 +64,7 @@ class _ContentState extends State<_Content> {
                 children: [
                   Text(
                     'Rating enabled: ',
-                    style: Theme.of(context).textTheme.bodyLarge,
+                    style: FlutterDeckTheme.of(context).textTheme.bodyMedium,
                   ),
                   Switch(
                     value: _ratingEnabled,

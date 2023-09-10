@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class EnableGaSlide extends FlutterDeckImageSlide {
-  const EnableGaSlide({super.key})
+class EnableGaSlide extends FlutterDeckSlideWidget {
+  const EnableGaSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/enable-ga',
@@ -10,8 +10,12 @@ class EnableGaSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/firebase-setup/enable-ga.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

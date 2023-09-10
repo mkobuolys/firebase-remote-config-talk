@@ -5,8 +5,8 @@ import 'package:firebase_remote_config_talk/punterest/punterest_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class AppUpdateDemoSlide extends FlutterDeckBlankSlide {
-  const AppUpdateDemoSlide({super.key})
+class AppUpdateDemoSlide extends FlutterDeckSlideWidget {
+  const AppUpdateDemoSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/app-update-demo',
@@ -14,7 +14,11 @@ class AppUpdateDemoSlide extends FlutterDeckBlankSlide {
         );
 
   @override
-  Widget body(BuildContext context) => const _Content();
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.blank(
+      builder: (context) => const _Content(),
+    );
+  }
 }
 
 class _Content extends StatefulWidget {

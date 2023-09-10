@@ -5,8 +5,8 @@ import 'package:firebase_remote_config_talk/punterest/punterest_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class DailyPunDemoSlide extends FlutterDeckBlankSlide {
-  const DailyPunDemoSlide({super.key})
+class DailyPunDemoSlide extends FlutterDeckSlideWidget {
+  const DailyPunDemoSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/daily-pun-demo',
@@ -14,7 +14,11 @@ class DailyPunDemoSlide extends FlutterDeckBlankSlide {
         );
 
   @override
-  Widget body(BuildContext context) => const _Content();
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.blank(
+      builder: (context) => const _Content(),
+    );
+  }
 }
 
 class _Content extends StatefulWidget {

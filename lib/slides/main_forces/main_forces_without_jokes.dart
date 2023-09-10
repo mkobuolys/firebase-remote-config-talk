@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class MainForcesWithoutJokesSlide extends FlutterDeckImageSlide {
-  const MainForcesWithoutJokesSlide({super.key})
+class MainForcesWithoutJokesSlide extends FlutterDeckSlideWidget {
+  const MainForcesWithoutJokesSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/main-forces-without-jokes',
@@ -10,8 +10,12 @@ class MainForcesWithoutJokesSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/forces/main-forces.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

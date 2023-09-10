@@ -5,8 +5,8 @@ import 'package:firebase_remote_config_talk/punterest/rating/data/enums/rating_t
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class AbTestingDemoSlide extends FlutterDeckBlankSlide {
-  const AbTestingDemoSlide({super.key})
+class AbTestingDemoSlide extends FlutterDeckSlideWidget {
+  const AbTestingDemoSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/ab-testing-demo',
@@ -14,7 +14,11 @@ class AbTestingDemoSlide extends FlutterDeckBlankSlide {
         );
 
   @override
-  Widget body(BuildContext context) => const _Content();
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.blank(
+      builder: (context) => const _Content(),
+    );
+  }
 }
 
 class _Content extends StatefulWidget {
@@ -62,7 +66,7 @@ class _ContentState extends State<_Content> {
                 children: [
                   Text(
                     'Audio',
-                    style: Theme.of(context).textTheme.bodyLarge,
+                    style: FlutterDeckTheme.of(context).textTheme.bodyMedium,
                   ),
                   const SizedBox(width: 8),
                   Switch(
@@ -72,7 +76,7 @@ class _ContentState extends State<_Content> {
                   const SizedBox(width: 8),
                   Text(
                     'Button',
-                    style: Theme.of(context).textTheme.bodyLarge,
+                    style: FlutterDeckTheme.of(context).textTheme.bodyMedium,
                   ),
                 ],
               ),

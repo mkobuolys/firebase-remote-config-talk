@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class FeedbackSlide extends FlutterDeckImageSlide {
-  const FeedbackSlide({super.key})
+class FeedbackSlide extends FlutterDeckSlideWidget {
+  const FeedbackSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/feedback',
@@ -12,8 +12,12 @@ class FeedbackSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/feedback-qr.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

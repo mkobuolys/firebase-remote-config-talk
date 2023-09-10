@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class DashboardEmptySlide extends FlutterDeckImageSlide {
-  const DashboardEmptySlide({super.key})
+class DashboardEmptySlide extends FlutterDeckSlideWidget {
+  const DashboardEmptySlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/dashboard-empty',
@@ -10,8 +10,12 @@ class DashboardEmptySlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/firebase-setup/dashboard-empty.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

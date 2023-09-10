@@ -10,8 +10,8 @@ const createAbTestSlides = [
   CreateAbTestSlideStep5(),
 ];
 
-class CreateAbTestSlide extends FlutterDeckImageSlide {
-  const CreateAbTestSlide({super.key})
+class CreateAbTestSlide extends FlutterDeckSlideWidget {
+  const CreateAbTestSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/create-ab-test',
@@ -19,14 +19,18 @@ class CreateAbTestSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/ab-testing/create-ab-test.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }
 
-class CreateAbTestSlideStep1 extends FlutterDeckImageSlide {
-  const CreateAbTestSlideStep1({super.key})
+class CreateAbTestSlideStep1 extends FlutterDeckSlideWidget {
+  const CreateAbTestSlideStep1()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/create-ab-test-step-1',
@@ -34,14 +38,18 @@ class CreateAbTestSlideStep1 extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/ab-testing/create-ab-test-step-1.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }
 
-class CreateAbTestSlideStep2 extends FlutterDeckImageSlide {
-  const CreateAbTestSlideStep2({super.key})
+class CreateAbTestSlideStep2 extends FlutterDeckSlideWidget {
+  const CreateAbTestSlideStep2()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/create-ab-test-step-2',
@@ -49,14 +57,18 @@ class CreateAbTestSlideStep2 extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/ab-testing/create-ab-test-step-2.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }
 
-class CreateAbTestSlideStep3 extends FlutterDeckImageSlide {
-  const CreateAbTestSlideStep3({super.key})
+class CreateAbTestSlideStep3 extends FlutterDeckSlideWidget {
+  const CreateAbTestSlideStep3()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/create-ab-test-step-3',
@@ -64,14 +76,18 @@ class CreateAbTestSlideStep3 extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/ab-testing/create-ab-test-step-3.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }
 
-class CreateAbTestSlideStep4 extends FlutterDeckImageSlide {
-  const CreateAbTestSlideStep4({super.key})
+class CreateAbTestSlideStep4 extends FlutterDeckSlideWidget {
+  const CreateAbTestSlideStep4()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/create-ab-test-step-4',
@@ -79,14 +95,18 @@ class CreateAbTestSlideStep4 extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/ab-testing/create-ab-test-step-4.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }
 
-class CreateAbTestSlideStep5 extends FlutterDeckImageSlide {
-  const CreateAbTestSlideStep5({super.key})
+class CreateAbTestSlideStep5 extends FlutterDeckSlideWidget {
+  const CreateAbTestSlideStep5()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/create-ab-test-step-5',
@@ -94,8 +114,12 @@ class CreateAbTestSlideStep5 extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/ab-testing/create-ab-test-step-5.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class AddConditionSlide extends FlutterDeckImageSlide {
-  const AddConditionSlide({super.key})
+class AddConditionSlide extends FlutterDeckSlideWidget {
+  const AddConditionSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/add-condition',
@@ -10,8 +10,12 @@ class AddConditionSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/firebase-conditions/add-condition.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

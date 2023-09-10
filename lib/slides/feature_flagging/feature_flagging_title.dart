@@ -2,8 +2,8 @@ import 'package:firebase_remote_config_talk/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class FeatureFlaggingTitleSlide extends FlutterDeckBlankSlide {
-  const FeatureFlaggingTitleSlide({super.key})
+class FeatureFlaggingTitleSlide extends FlutterDeckSlideWidget {
+  const FeatureFlaggingTitleSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/feature-flagging',
@@ -11,7 +11,12 @@ class FeatureFlaggingTitleSlide extends FlutterDeckBlankSlide {
         );
 
   @override
-  Widget body(BuildContext context) {
-    return const ChapterView(title: 'Chapter 4', subtitle: 'Feature flagging');
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.blank(
+      builder: (context) => const ChapterView(
+        title: 'Chapter 4',
+        subtitle: 'Feature flagging',
+      ),
+    );
   }
 }

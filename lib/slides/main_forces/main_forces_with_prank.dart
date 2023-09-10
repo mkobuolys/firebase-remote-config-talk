@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class MainForcesWithPrankSlide extends FlutterDeckBlankSlide {
-  const MainForcesWithPrankSlide({super.key})
+class MainForcesWithPrankSlide extends FlutterDeckSlideWidget {
+  const MainForcesWithPrankSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/main-forces-with-prank',
@@ -10,31 +10,33 @@ class MainForcesWithPrankSlide extends FlutterDeckBlankSlide {
         );
 
   @override
-  Widget body(BuildContext context) {
-    return Center(
-      child: LayoutBuilder(
-        builder: (context, constraints) {
-          final height = constraints.maxHeight;
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.blank(
+      builder: (context) => Center(
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final height = constraints.maxHeight;
 
-          return Stack(
-            alignment: Alignment.center,
-            children: [
-              Image.asset(
-                'assets/images/forces/main-forces-final.png',
-                fit: BoxFit.contain,
-                height: height,
-              ),
-              Positioned(
-                top: height / 2.2,
-                child: Image.asset(
-                  'assets/images/prank.png',
+            return Stack(
+              alignment: Alignment.center,
+              children: [
+                Image.asset(
+                  'assets/images/forces/main-forces-final.png',
                   fit: BoxFit.contain,
-                  height: height / 3,
+                  height: height,
                 ),
-              ),
-            ],
-          );
-        },
+                Positioned(
+                  top: height / 2.2,
+                  child: Image.asset(
+                    'assets/images/prank.png',
+                    fit: BoxFit.contain,
+                    height: height / 3,
+                  ),
+                ),
+              ],
+            );
+          },
+        ),
       ),
     );
   }

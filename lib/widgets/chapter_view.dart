@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_deck/flutter_deck.dart';
 
 class ChapterView extends StatelessWidget {
   const ChapterView({
@@ -12,14 +13,16 @@ class ChapterView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = FlutterDeckTheme.of(context).textTheme;
+
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(title, style: Theme.of(context).textTheme.displaySmall),
+          Text(title, style: textTheme.bodyLarge),
           Text(
             subtitle,
-            style: Theme.of(context).textTheme.displayLarge,
+            style: textTheme.title,
             textAlign: TextAlign.center,
           ),
         ],

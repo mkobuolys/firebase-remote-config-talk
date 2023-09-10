@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class FirebaseServiceInitSlide extends FlutterDeckBlankSlide {
-  const FirebaseServiceInitSlide({super.key})
+class FirebaseServiceInitSlide extends FlutterDeckSlideWidget {
+  const FirebaseServiceInitSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/firebase-service-init',
@@ -10,11 +10,13 @@ class FirebaseServiceInitSlide extends FlutterDeckBlankSlide {
         );
 
   @override
-  Widget body(BuildContext context) {
-    return Center(
-      child: Image.asset(
-        'assets/images/firebase-parameters/firebase-service-init.png',
-        fit: BoxFit.contain,
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.blank(
+      builder: (context) => Center(
+        child: Image.asset(
+          'assets/images/firebase-parameters/firebase-service-init.png',
+          fit: BoxFit.contain,
+        ),
       ),
     );
   }

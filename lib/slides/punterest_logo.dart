@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class PunterestLogoSlide extends FlutterDeckImageSlide {
-  const PunterestLogoSlide({super.key})
+class PunterestLogoSlide extends FlutterDeckSlideWidget {
+  const PunterestLogoSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/punterest',
@@ -10,8 +10,12 @@ class PunterestLogoSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/punterest-logo.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class DailyPunServiceSlide extends FlutterDeckImageSlide {
-  const DailyPunServiceSlide({super.key})
+class DailyPunServiceSlide extends FlutterDeckSlideWidget {
+  const DailyPunServiceSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/daily-pun-service',
@@ -10,8 +10,12 @@ class DailyPunServiceSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/firebase-parameters/daily-pun-service.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

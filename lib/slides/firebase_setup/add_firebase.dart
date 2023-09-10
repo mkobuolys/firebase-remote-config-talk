@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class AddFirebaseSlide extends FlutterDeckImageSlide {
-  const AddFirebaseSlide({super.key})
+class AddFirebaseSlide extends FlutterDeckSlideWidget {
+  const AddFirebaseSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/add-firebase',
@@ -10,8 +10,12 @@ class AddFirebaseSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/firebase-setup/add-firebase.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

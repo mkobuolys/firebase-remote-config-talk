@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class FirebaseDependenciesSlide extends FlutterDeckImageSlide {
-  const FirebaseDependenciesSlide({super.key})
+class FirebaseDependenciesSlide extends FlutterDeckSlideWidget {
+  const FirebaseDependenciesSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/firebase-dependencies',
@@ -10,8 +10,12 @@ class FirebaseDependenciesSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/firebase-setup/firebase-dependencies.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

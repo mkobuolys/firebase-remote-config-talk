@@ -4,8 +4,8 @@ import 'package:confetti/confetti.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class MainForcesWithJokesSlide extends FlutterDeckBlankSlide {
-  const MainForcesWithJokesSlide({super.key})
+class MainForcesWithJokesSlide extends FlutterDeckSlideWidget {
+  const MainForcesWithJokesSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/main-forces-with-jokes',
@@ -14,7 +14,11 @@ class MainForcesWithJokesSlide extends FlutterDeckBlankSlide {
         );
 
   @override
-  Widget body(BuildContext context) => const _Content();
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.blank(
+      builder: (context) => const _Content(),
+    );
+  }
 }
 
 class _Content extends StatefulWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class FirstAppOpenConditionSlide extends FlutterDeckImageSlide {
-  const FirstAppOpenConditionSlide({super.key})
+class FirstAppOpenConditionSlide extends FlutterDeckSlideWidget {
+  const FirstAppOpenConditionSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/first-app-open-condition',
@@ -10,8 +10,12 @@ class FirstAppOpenConditionSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/firebase-conditions/first-app-open-condition.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

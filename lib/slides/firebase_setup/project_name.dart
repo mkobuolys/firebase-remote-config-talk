@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class ProjectNameSlide extends FlutterDeckImageSlide {
-  const ProjectNameSlide({super.key})
+class ProjectNameSlide extends FlutterDeckSlideWidget {
+  const ProjectNameSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/project-name',
@@ -10,8 +10,12 @@ class ProjectNameSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/firebase-setup/project-name.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

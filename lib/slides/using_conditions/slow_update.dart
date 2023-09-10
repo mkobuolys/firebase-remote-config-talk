@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class SlowUpdateSlide extends FlutterDeckImageSlide {
-  const SlowUpdateSlide({super.key})
+class SlowUpdateSlide extends FlutterDeckSlideWidget {
+  const SlowUpdateSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/slow-update',
@@ -10,8 +10,12 @@ class SlowUpdateSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/firebase-conditions/sloth-slow.gif',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

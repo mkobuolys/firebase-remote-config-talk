@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class AndroidConditionSlide extends FlutterDeckImageSlide {
-  const AndroidConditionSlide({super.key})
+class AndroidConditionSlide extends FlutterDeckSlideWidget {
+  const AndroidConditionSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/android-condition',
@@ -10,8 +10,12 @@ class AndroidConditionSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/firebase-conditions/android-condition.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }

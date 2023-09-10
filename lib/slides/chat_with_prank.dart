@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class ChatWithPrankSlide extends FlutterDeckBlankSlide {
-  const ChatWithPrankSlide({super.key})
+class ChatWithPrankSlide extends FlutterDeckSlideWidget {
+  const ChatWithPrankSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/chat-with-prank',
@@ -11,7 +11,11 @@ class ChatWithPrankSlide extends FlutterDeckBlankSlide {
         );
 
   @override
-  Widget body(BuildContext context) => const _Content();
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.blank(
+      builder: (context) => const _Content(),
+    );
+  }
 }
 
 typedef _MessageData = ({bool isOwnMessage, String text});
@@ -117,7 +121,7 @@ class _ContentState extends State<_Content> {
                       padding: const EdgeInsets.only(top: 16),
                       child: Text(
                         'You left the conversation.',
-                        style: Theme.of(context).textTheme.displaySmall,
+                        style: FlutterDeckTheme.of(context).textTheme.subtitle,
                       ),
                     ),
                 ],
@@ -158,10 +162,10 @@ class _Message extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         child: Text(
           text,
-          style: Theme.of(context)
+          style: FlutterDeckTheme.of(context)
               .textTheme
-              .displayMedium
-              ?.copyWith(color: Colors.white),
+              .subtitle
+              .copyWith(color: Colors.white),
         ),
       ),
     );

@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class AbTestingIdeaSlide extends FlutterDeckImageSlide {
-  const AbTestingIdeaSlide({super.key})
+class AbTestingIdeaSlide extends FlutterDeckSlideWidget {
+  const AbTestingIdeaSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/ab-testing-idea',
@@ -10,12 +10,13 @@ class AbTestingIdeaSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/ab-testing/ab-testing.png',
         fit: BoxFit.contain,
-      );
-
-  @override
-  String? get label =>
-      'Source: https://firebase.google.com/products/remote-config';
+      ),
+      label: 'Source: https://firebase.google.com/products/remote-config',
+    );
+  }
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class SlowAppReviewSlide extends FlutterDeckImageSlide {
-  const SlowAppReviewSlide({super.key})
+class SlowAppReviewSlide extends FlutterDeckSlideWidget {
+  const SlowAppReviewSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/slow-app-review',
@@ -10,8 +10,12 @@ class SlowAppReviewSlide extends FlutterDeckImageSlide {
         );
 
   @override
-  Image get image => Image.asset(
+  FlutterDeckSlide build(BuildContext context) {
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
         'assets/images/firebase-conditions/slow-app-review.png',
         fit: BoxFit.contain,
-      );
+      ),
+    );
+  }
 }
