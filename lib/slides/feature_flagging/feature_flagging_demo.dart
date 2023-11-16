@@ -32,10 +32,10 @@ class _ContentState extends State<_Content> {
   final _key = UniqueKey();
 
   var _config = firebaseRemoteConfig.copyWith(
-    ratingEnabled: true,
+    ratingEnabled: false,
     ratingType: RatingType.audio.value,
   );
-  var _ratingEnabled = true;
+  var _ratingEnabled = false;
 
   void _onRatingEnabledChanged(bool value) => setState(
         () {
