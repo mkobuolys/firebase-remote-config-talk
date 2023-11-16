@@ -11,25 +11,10 @@ class AppUpdateServiceSlide extends FlutterDeckSlideWidget {
 
   @override
   FlutterDeckSlide build(BuildContext context) {
-    return FlutterDeckSlide.blank(
-      builder: (context) => Center(
-        child: Row(
-          children: [
-            Expanded(
-              child: Image.asset(
-                'assets/images/firebase-conditions/get-app-version.png',
-                fit: BoxFit.contain,
-              ),
-            ),
-            const SizedBox(width: 16),
-            Expanded(
-              child: Image.asset(
-                'assets/images/firebase-conditions/app-update-service.png',
-                fit: BoxFit.contain,
-              ),
-            ),
-          ],
-        ),
+    return FlutterDeckSlide.image(
+      imageBuilder: (context) => Image.asset(
+        'assets/images/firebase-conditions/app-update-service.png',
+        fit: BoxFit.contain,
       ),
     );
   }

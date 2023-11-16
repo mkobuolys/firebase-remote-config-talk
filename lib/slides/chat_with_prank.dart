@@ -121,7 +121,10 @@ class _ContentState extends State<_Content> {
                       padding: const EdgeInsets.only(top: 16),
                       child: Text(
                         'You left the conversation.',
-                        style: FlutterDeckTheme.of(context).textTheme.subtitle,
+                        style: FlutterDeckTheme.of(context)
+                            .textTheme
+                            .subtitle
+                            .copyWith(fontStyle: FontStyle.italic),
                       ),
                     ),
                 ],

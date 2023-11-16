@@ -7,7 +7,6 @@ import 'package:firebase_remote_config_talk/slides/feature_flagging/laugh_meter.
 import 'package:firebase_remote_config_talk/slides/feature_flagging/percentage_rollout.dart';
 import 'package:firebase_remote_config_talk/slides/feature_flagging/rating_enabled_conditional.dart';
 import 'package:firebase_remote_config_talk/slides/feature_flagging/rating_enabled_parameter.dart';
-import 'package:firebase_remote_config_talk/slides/feature_flagging/rating_service.dart';
 
 const featureFlaggingSlides = [
   FeatureFlaggingTitleSlide(),
@@ -17,7 +16,6 @@ const featureFlaggingSlides = [
   PercentageRolloutSlide(),
   RatingEnabledParameterSlide(),
   RatingEnabledConditionalSlide(),
-  RatingServiceSlide(),
   AudioListenerSlide(),
   FeatureFlaggingDemoSlide(),
 ];
