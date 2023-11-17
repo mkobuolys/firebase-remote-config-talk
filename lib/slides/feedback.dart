@@ -7,7 +7,6 @@ class FeedbackSlide extends FlutterDeckSlideWidget {
           configuration: const FlutterDeckSlideConfiguration(
             route: '/feedback',
             footer: FlutterDeckFooterConfiguration(showFooter: false),
-            hidden: true,
           ),
         );
 
