@@ -36,7 +36,7 @@ const _messages = <_MessageData>[
     text: 'Hmm, we can use Firebase to build an MVP quickly.',
   ),
   (isOwnMessage: false, text: 'Sounds good. One last question...'),
-  (isOwnMessage: false, text: 'Which state management solution should we use?'),
+  (isOwnMessage: false, text: 'Can we also use AI?'),
   (isOwnMessage: true, text: '...'),
 ];
 
