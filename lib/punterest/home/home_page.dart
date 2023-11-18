@@ -68,7 +68,7 @@ class _AudioListenerState extends State<_AudioListener> {
     _audioRecorder = AudioRecorder()
       ..onAmplitudeChanged(const Duration(seconds: 1)).listen(
         (amplitude) {
-          if (amplitude.current < -10) return;
+          if (amplitude.current < -15) return;
 
           widget.onLaugh();
         },
