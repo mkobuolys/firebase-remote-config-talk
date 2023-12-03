@@ -1,11 +1,11 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class GetRatingTypeSlide extends FlutterDeckSlideWidget {
-  const GetRatingTypeSlide()
+class FirebaseRolloutPreviewSlide extends FlutterDeckSlideWidget {
+  const FirebaseRolloutPreviewSlide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/get-rating-type',
+            route: '/firebase-rollout-preview',
           ),
         );
 
@@ -13,9 +13,11 @@ class GetRatingTypeSlide extends FlutterDeckSlideWidget {
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.image(
       imageBuilder: (context) => Image.asset(
-        'assets/images/ab-testing/get-rating-type.png',
+        'assets/images/feature-flagging/firebase-rollout-preview.png',
         fit: BoxFit.contain,
       ),
+      label: 'How to release safely and reduce risk with Remote Config and '
+          'Crashlytics - Firebase Demo Day 2023',
     );
   }
 }
