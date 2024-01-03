@@ -6,6 +6,7 @@ class FeedbackSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/feedback',
+            title: 'Feedback QR code',
             footer: FlutterDeckFooterConfiguration(showFooter: false),
           ),
         );

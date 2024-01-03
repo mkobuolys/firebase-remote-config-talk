@@ -6,6 +6,7 @@ class ExperimentResultsSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/experiment-results',
+            title: 'A/B testing results',
           ),
         );
 

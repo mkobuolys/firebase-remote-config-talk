@@ -6,6 +6,7 @@ class AddConditionSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/add-condition',
+            title: 'Add condition',
           ),
         );
 

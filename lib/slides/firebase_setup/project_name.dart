@@ -6,6 +6,7 @@ class ProjectNameSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/project-name',
+            title: 'Add Firebase project name',
           ),
         );
 

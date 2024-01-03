@@ -6,6 +6,7 @@ class InitializeFirebaseSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/initialize-firebase',
+            title: 'Initialize Firebase',
           ),
         );
 

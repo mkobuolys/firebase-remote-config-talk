@@ -6,6 +6,7 @@ class FirstAppOpenConditionSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/first-app-open-condition',
+            title: 'First app open condition',
           ),
         );
 

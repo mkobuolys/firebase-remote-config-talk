@@ -9,6 +9,7 @@ class PunterestDemoSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/punterest-demo',
+            title: 'Demo: Punterest (static)',
           ),
         );
 

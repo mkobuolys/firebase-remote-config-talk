@@ -6,6 +6,7 @@ class PercentageRolloutSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/percentage-rollout',
+            title: 'Staged rollout',
           ),
         );
 

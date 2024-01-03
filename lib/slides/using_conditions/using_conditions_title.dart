@@ -7,6 +7,7 @@ class UsingConditionsTitleSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/using-conditions',
+            title: 'Chapter 3: Using Firebase Remote Config conditions',
           ),
         );
 

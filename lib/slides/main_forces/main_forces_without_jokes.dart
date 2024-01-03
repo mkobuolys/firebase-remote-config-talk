@@ -6,6 +6,7 @@ class MainForcesWithoutJokesSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/main-forces-without-jokes',
+            title: 'Two main forces',
           ),
         );
 

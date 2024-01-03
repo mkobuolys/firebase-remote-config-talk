@@ -6,6 +6,7 @@ class FirebaseRolloutPreviewSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/firebase-rollout-preview',
+            title: 'Firebase Rollout feature preview',
           ),
         );
 

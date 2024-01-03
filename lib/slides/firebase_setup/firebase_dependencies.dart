@@ -6,6 +6,7 @@ class FirebaseDependenciesSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/firebase-dependencies',
+            title: 'Add Firebase dependencies',
           ),
         );
 

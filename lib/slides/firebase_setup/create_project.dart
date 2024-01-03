@@ -6,6 +6,7 @@ class CreateProjectSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/create-project',
+            title: 'Create Firebase project',
           ),
         );
 

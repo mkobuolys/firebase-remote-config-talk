@@ -7,6 +7,7 @@ class FeatureFlaggingTitleSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/feature-flagging',
+            title: 'Chapter 4: Feature flagging',
           ),
         );
 

@@ -6,6 +6,7 @@ class RatingTypeUsageSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/rating-type-usage',
+            title: 'Rating type code',
           ),
         );
 

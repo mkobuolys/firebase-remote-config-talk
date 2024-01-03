@@ -9,6 +9,7 @@ class MainForcesWithJokesSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/main-forces-with-jokes',
+            title: 'The third main force',
             transition: FlutterDeckTransition.none(),
           ),
         );

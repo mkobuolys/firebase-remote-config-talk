@@ -6,6 +6,7 @@ class ParameterTypesSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/parameter-types',
+            title: 'Firebase parameter types',
           ),
         );
 

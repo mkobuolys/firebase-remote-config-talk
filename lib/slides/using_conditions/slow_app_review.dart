@@ -6,6 +6,7 @@ class SlowAppReviewSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/slow-app-review',
+            title: 'Slow Apple app review times',
           ),
         );
 

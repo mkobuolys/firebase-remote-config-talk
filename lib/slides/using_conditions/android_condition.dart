@@ -6,6 +6,7 @@ class AndroidConditionSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/android-condition',
+            title: 'Android platform condition',
           ),
         );
 

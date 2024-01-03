@@ -6,6 +6,7 @@ class CrossPlatformPtsdSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/cross-platform-ptsd',
+            title: 'Cross-platform PTSD',
           ),
         );
 

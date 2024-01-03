@@ -10,6 +10,7 @@ class FeatureFlaggingDemoSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/feature-flagging-demo',
+            title: 'Demo: Feature flagging',
           ),
         );
 

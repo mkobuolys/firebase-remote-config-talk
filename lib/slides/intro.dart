@@ -6,6 +6,7 @@ class IntroSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/intro',
+            title: 'Intro',
             footer: FlutterDeckFooterConfiguration(showFooter: false),
           ),
         );

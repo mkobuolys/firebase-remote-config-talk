@@ -6,6 +6,7 @@ class ConfigureGaSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/configure-ga',
+            title: 'Configure Google Analytics',
           ),
         );
 

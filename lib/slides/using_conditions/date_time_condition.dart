@@ -6,6 +6,7 @@ class DateTimeConditionSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/date-time-condition',
+            title: 'Date and time condition',
           ),
         );
 

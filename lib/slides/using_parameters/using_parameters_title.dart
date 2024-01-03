@@ -7,6 +7,7 @@ class UsingParametersTitleSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/using-parameters',
+            title: 'Chapter 2: Using Firebase Remote Config parameters',
           ),
         );
 

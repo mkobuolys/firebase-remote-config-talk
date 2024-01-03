@@ -6,6 +6,7 @@ class SlowUpdateSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/slow-update',
+            title: 'Slow app update approval',
           ),
         );
 

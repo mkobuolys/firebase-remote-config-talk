@@ -6,6 +6,7 @@ class AudioListenerSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/audio-listener',
+            title: 'Audio listener code',
           ),
         );
 

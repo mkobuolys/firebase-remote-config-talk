@@ -6,6 +6,7 @@ class DailyPunServiceSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/daily-pun-service',
+            title: 'Create daily pun service',
           ),
         );
 

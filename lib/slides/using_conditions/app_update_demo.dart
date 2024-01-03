@@ -10,6 +10,7 @@ class AppUpdateDemoSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/app-update-demo',
+            title: 'Demo: App update dialog',
           ),
         );
 

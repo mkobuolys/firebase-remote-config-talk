@@ -6,6 +6,7 @@ class MinimumFetchIntervalProblemSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/minimum-fetch-interval-problem',
+            title: 'Minimum fetch interval problem',
           ),
         );
 

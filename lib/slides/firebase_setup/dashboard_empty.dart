@@ -6,6 +6,7 @@ class DashboardEmptySlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/dashboard-empty',
+            title: 'Empty Firebase dashboard',
           ),
         );
 

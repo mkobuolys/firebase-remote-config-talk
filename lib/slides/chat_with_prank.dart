@@ -6,6 +6,7 @@ class ChatWithPrankSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/chat-with-prank',
+            title: 'Chat with Prank',
             steps: 12,
           ),
         );

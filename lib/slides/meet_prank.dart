@@ -6,6 +6,7 @@ class MeetPrankSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/meet-prank',
+            title: 'Meet Prank',
           ),
         );
 

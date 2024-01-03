@@ -10,6 +10,7 @@ class DailyPunDemoSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/daily-pun-demo',
+            title: 'Demo: Daily pun',
           ),
         );
 

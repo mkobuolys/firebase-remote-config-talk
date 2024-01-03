@@ -6,6 +6,7 @@ class ConfigureFirebaseSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/configure-firebase',
+            title: 'Flutterfire CLI',
           ),
         );
 

@@ -15,6 +15,7 @@ class CreateAbTestSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/create-ab-test',
+            title: 'Create Remote Config experiment',
           ),
         );
 
@@ -34,6 +35,7 @@ class CreateAbTestSlideStep1 extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/create-ab-test-step-1',
+            title: 'Experiment name',
           ),
         );
 
@@ -53,6 +55,7 @@ class CreateAbTestSlideStep2 extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/create-ab-test-step-2',
+            title: 'Experiment targeting',
           ),
         );
 
@@ -72,6 +75,7 @@ class CreateAbTestSlideStep3 extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/create-ab-test-step-3',
+            title: 'Experiment goal and metrics',
           ),
         );
 
@@ -91,6 +95,7 @@ class CreateAbTestSlideStep4 extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/create-ab-test-step-4',
+            title: 'Experiment variants',
           ),
         );
 
@@ -110,6 +115,7 @@ class CreateAbTestSlideStep5 extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/create-ab-test-step-5',
+            title: 'Experiment variant weights',
           ),
         );
 

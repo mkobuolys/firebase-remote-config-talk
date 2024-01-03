@@ -6,6 +6,7 @@ class RatingEnabledConditionalSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/rating-enabled-conditional',
+            title: 'Rating enabled feature flag',
           ),
         );
 

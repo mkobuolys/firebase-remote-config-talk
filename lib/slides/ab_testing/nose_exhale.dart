@@ -6,6 +6,7 @@ class NoseExhaleSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/nose-exhale',
+            title: 'Silent laugh problem',
           ),
         );
 

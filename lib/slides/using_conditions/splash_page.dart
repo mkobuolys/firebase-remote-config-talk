@@ -6,6 +6,7 @@ class SplashPageSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/splash-page',
+            title: 'Splash page code',
           ),
         );
 

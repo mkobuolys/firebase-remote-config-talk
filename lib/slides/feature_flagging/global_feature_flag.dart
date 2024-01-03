@@ -6,6 +6,7 @@ class GlobalFeatureFlagSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/global-feature-flag',
+            title: 'Global feature flag',
           ),
         );
 

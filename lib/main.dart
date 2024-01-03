@@ -19,16 +19,15 @@ class FlutterFirebaseTalk extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlutterDeckApp(
-      configuration: const FlutterDeckConfiguration(
-        background: FlutterDeckBackgroundConfiguration(
-          dark: FlutterDeckBackground.custom(child: _Background()),
-          light: FlutterDeckBackground.custom(child: _Background()),
-        ),
-        footer: FlutterDeckFooterConfiguration(
+      configuration: FlutterDeckConfiguration(
+        footer: const FlutterDeckFooterConfiguration(
           showSlideNumbers: true,
           showSocialHandle: true,
         ),
-        transition: FlutterDeckTransition.fade(),
+        slideSize: FlutterDeckSlideSize.fromAspectRatio(
+          aspectRatio: const FlutterDeckAspectRatio.ratio16x9(),
+        ),
+        transition: const FlutterDeckTransition.fade(),
       ),
       slides: const [
         IntroSlide(),
@@ -53,26 +52,6 @@ class FlutterFirebaseTalk extends StatelessWidget {
         description: 'GDE for Flutter & Dart',
         socialHandle: '@mkobuolys',
         imagePath: 'assets/images/avatar.png',
-      ),
-    );
-  }
-}
-
-class _Background extends StatelessWidget {
-  const _Background();
-
-  @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints) => Padding(
-        padding: const EdgeInsets.only(bottom: 48, right: 16),
-        child: Align(
-          alignment: Alignment.bottomRight,
-          child: Image.asset(
-            'assets/images/devfest-logo.png',
-            width: constraints.maxWidth / 15,
-          ),
-        ),
       ),
     );
   }

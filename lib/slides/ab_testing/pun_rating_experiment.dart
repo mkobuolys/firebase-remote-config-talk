@@ -6,6 +6,7 @@ class PunRatingExperimentSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/pun-rating-experiment',
+            title: 'Pun rating experiment start',
           ),
         );
 

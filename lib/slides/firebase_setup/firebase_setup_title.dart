@@ -7,6 +7,7 @@ class FirebaseSetupTitleSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/firebase-setup',
+            title: 'Chapter 1: Firebase setup',
           ),
         );
 

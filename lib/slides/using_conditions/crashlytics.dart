@@ -6,6 +6,7 @@ class CrashlyticsSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/crashlytics',
+            title: 'Crashlytics',
           ),
         );
 

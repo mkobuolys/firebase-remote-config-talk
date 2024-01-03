@@ -6,6 +6,7 @@ class AppUpdateServiceSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/app-update-service',
+            title: 'App update service code',
           ),
         );
 

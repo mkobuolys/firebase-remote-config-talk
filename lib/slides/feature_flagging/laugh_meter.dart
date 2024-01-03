@@ -6,6 +6,7 @@ class LaughMeterSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/laugh-meter',
+            title: 'Laugh-o-meter',
           ),
         );
 

@@ -6,6 +6,7 @@ class PracticalJokeSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/practical-joke',
+            title: 'Practical joke',
           ),
         );
 

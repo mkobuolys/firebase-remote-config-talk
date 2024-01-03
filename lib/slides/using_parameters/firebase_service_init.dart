@@ -6,6 +6,7 @@ class FirebaseServiceInitSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/firebase-service-init',
+            title: 'Initialize Firebase service',
           ),
         );
 

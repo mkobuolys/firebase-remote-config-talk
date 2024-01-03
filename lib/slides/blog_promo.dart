@@ -6,6 +6,7 @@ class BlogPromoSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/blog-promo',
+            title: 'kazlauskas.dev',
           ),
         );
 

@@ -6,6 +6,7 @@ class RealTimeConfigCodeSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/real-time-config-code',
+            title: 'Real-time config code',
           ),
         );
 

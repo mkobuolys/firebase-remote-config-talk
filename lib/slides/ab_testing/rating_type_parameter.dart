@@ -6,6 +6,7 @@ class RatingTypeParameterSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/rating-type-parameter',
+            title: 'Rating type parameter',
           ),
         );
 

@@ -6,6 +6,7 @@ class RealTimeConfigExplainedSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/real-time-config-explained',
+            title: 'Real-time Remote Config',
           ),
         );
 

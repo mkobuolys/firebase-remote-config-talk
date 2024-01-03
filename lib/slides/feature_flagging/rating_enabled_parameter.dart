@@ -6,6 +6,7 @@ class RatingEnabledParameterSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/rating-enabled-parameter',
+            title: 'Staged rollout condition',
           ),
         );
 

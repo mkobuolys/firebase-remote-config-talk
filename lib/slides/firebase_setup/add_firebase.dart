@@ -6,6 +6,7 @@ class AddFirebaseSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/add-firebase',
+            title: 'Add Firebase to your Flutter app',
           ),
         );
 

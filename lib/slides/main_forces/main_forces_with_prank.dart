@@ -6,6 +6,7 @@ class MainForcesWithPrankSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/main-forces-with-prank',
+            title: 'Prank and main forces',
           ),
         );
 

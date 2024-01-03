@@ -6,6 +6,7 @@ class RatingTypeParameterWithExperimentSlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/rating-type-parameter-with-experiment',
+            title: 'Rating type parameter with experiment',
           ),
         );
 
