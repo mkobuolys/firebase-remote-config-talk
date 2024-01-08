@@ -6,7 +6,6 @@ class SummarySlide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/summary',
-            steps: 4,
             header: FlutterDeckHeaderConfiguration(title: 'Summary'),
           ),
         );
@@ -15,7 +14,6 @@ class SummarySlide extends FlutterDeckSlideWidget {
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.split(
       leftBuilder: (context) => FlutterDeckBulletList(
-        useSteps: true,
         items: const [
           'Parameters',
           'Conditions',

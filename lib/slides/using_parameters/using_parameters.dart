@@ -6,10 +6,12 @@ import 'package:firebase_remote_config_talk/slides/using_parameters/minimum_fetc
 import 'package:firebase_remote_config_talk/slides/using_parameters/parameter_types.dart';
 import 'package:firebase_remote_config_talk/slides/using_parameters/real_time_config_code.dart';
 import 'package:firebase_remote_config_talk/slides/using_parameters/real_time_config_explained.dart';
+import 'package:firebase_remote_config_talk/slides/using_parameters/using_parameters_chat.dart';
 import 'package:firebase_remote_config_talk/slides/using_parameters/using_parameters_title.dart';
 
 const usingParametersSlides = [
   UsingParametersTitleSlide(),
+  UsingParametersChatSlide(),
   ParameterTypesSlide(),
   DailyPunParameterSlide(),
   FirebaseServiceInitSlide(),
